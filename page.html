@@ -1,85 +1,118 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-	<title>pactify MoonTM</title>
-	<style>
-		/* Add CSS styles here */
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		
-		.box {
-			width: 300px;
-			height: 300px;
-			margin: 20px;
-			background-color: #333;
-			color: white;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.3s ease-in-out;
-		}
-		
-		.box:hover {
-			transform: scale(1.1);
-		}
-		
-		.box h2 {
-			font-size: 36px;
-			margin-top: 0;
-		}
-		
-		.box p {
-			font-size: 24px;
-			margin-bottom: 0;
-		}
-		
-		.button {
-			background-color: #FF5E5E;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			font-size: 24px;
-			cursor: pointer;
-			transition: background-color 0.3s ease-in-out;
-		}
-		
-		.button:hover {
-			background-color: #FF3B3B;
-		}
-		
-	</style>
-</head>
-<body>
-	<header>
-		<h1>MoonTM</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">member</a></li>
-				<li><a href="#">pillage</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<div class="member">
-			<div class="box">
-				<h2>Heading 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ac dolor blandit mattis eu in nibh.</p>
-				<button class="button">Learn More</button>
-			</div>
-			<div class="box">
-				<h2>Heading 2</h2>
-				<p>Sed commodo, sapien quis tristique porttitor, odio mauris gravida metus, et efficitur mi nulla vel enim.</p>
-				<button class="button">Learn More</button>
-			</div>
-			<div class="box">
-				<h2>Heading 3</h2>
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <style>
+      /* Navigation menu */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      
+      nav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Homepage content */
+      #home {
+        background-image: url("https://source.unsplash.com/random");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        animation: fadein 2s;
+      }
+      
+      /* Contact page content */
+      #contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        animation: slidein 2s;
+      }
+      
+      /* Member page content */
+      #member {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        animation: rotate 2s;
+      }
+      
+      /* Keyframe animations */
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      
+      @keyframes slidein {
+        from { transform: translateX(-100%); }
+        to   { transform: translateX(0%); }
+      }
+      
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation menu -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#member">Member</a>
+    </nav>
+    
+    <!-- Homepage content -->
+    <div id="home">
+      <h1>Welcome to my website!</h1>
+      <p>Explore our services and join our community.</p>
+    </div>
+    
+    <!-- Contact page content -->
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us with any questions or comments.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+    
+    <!-- Member page content -->
+    <div id="member">
+      <h2>Member Login</h2>
+      <form>
+        <label for="username">Username
+
 			
