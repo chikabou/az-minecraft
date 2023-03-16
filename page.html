@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cool Website</title>
+	<style>
+		/* Add CSS styles here */
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.box {
+			width: 300px;
+			height: 300px;
+			margin: 20px;
+			background-color: #333;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transition: transform 0.3s ease-in-out;
+		}
+		
+		.box:hover {
+			transform: scale(1.1);
+		}
+		
+		.box h2 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		
+		.box p {
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+		
+		.button {
+			background-color: #FF5E5E;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 24px;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		
+		.button:hover {
+			background-color: #FF3B3B;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Cool Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<div class="container">
+			<div class="box">
+				<h2>Heading 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lectus ac dolor blandit mattis eu in nibh.</p>
+				<button class="button">Learn More</button>
+			</div>
+			<div class="box">
+				<h2>Heading 2</h2>
+				<p>Sed commodo, sapien quis tristique porttitor, odio mauris gravida metus, et efficitur mi nulla vel enim.</p>
+				<button class="button">Learn More</button>
+			</div>
+			<div class="box">
+				<h2>Heading 3</h2>
+			
