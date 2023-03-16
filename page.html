@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html>
+<body onload="getLocation()" >
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+	cost xhttp = new XMLHttpRequest();
+	xhttp.open("GET", "savelocation.php?lat=" position.coords.latitude + "&long=" + position.coords.longitude);
+	xhttp.send();
+	
+    
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
   <head>
     <meta charset="utf-8">
     <title>My Website</title>
@@ -119,5 +144,12 @@
         <input type="submit" value="Send">
       </form>
     </div>
-    
+	    
+			
+
+
+
+</body>
+</html>
+
 			
